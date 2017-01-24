@@ -1635,7 +1635,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	position: relative;
 }
 
-.has-header-image.twentyseventeen-front-page .custom-header,
+.has-header-image.twentyseventeen-front-page .custom-header {
+	display: table;
+	width: 100%;
+}
+
 .has-header-video.twentyseventeen-front-page .custom-header,
 .has-header-image.home.blog .custom-header,
 .has-header-video.home.blog .custom-header {
@@ -3319,7 +3323,7 @@ object {
 	.has-header-image.twentyseventeen-front-page .custom-header {
 		display: block;
 	}
-	
+
 	.has-header-video.twentyseventeen-front-page .custom-header,
 	.has-header-image.home.blog .custom-header,
 	.has-header-video.home.blog .custom-header {
@@ -3650,7 +3654,7 @@ object {
 	.admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
 	.admin-bar.home.blog.has-header-image .custom-header-media,
 	.admin-bar.home.blog.has-header-video .custom-header-media {
-		height: calc(100vh - 32px);
+		height: 300px;
 	}
 
 	.panel-content .wrap {
