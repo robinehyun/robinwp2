@@ -20,6 +20,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+<link rel="stylesheet" href="http://localhost/~robinyun/robinwp2/wp-content/themes/twentyseventeen/robin.css">
 <script type="text/javascript" src="http://localhost/~robinyun/robinwp2/wp-content/themes/twentyseventeen/assets/js/app.js"></script>
 </head>
 
