@@ -2,5 +2,136 @@
 .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
 .admin-bar.home.blog.has-header-image .custom-header-media,
 .admin-bar.home.blog.has-header-video .custom-header-media {
-  height: 300px;
+  height: 100vh;
+  background: #000000;
+  opacity: 0.6;
+  width: 100%;
+}
+
+.has-header-image.twentyseventeen-front-page .custom-header {
+  display: block;
+  background-image: url('http://demo.djmimi.net/themes/start/travelog-demo/images/header_bg.jpg');
+  background-position: center center;
+}
+
+#masthead .wrap {
+  text-align: center !important;
+  width: 75%;
+}
+
+.twentyseventeen-front-page.has-header-image .site-branding,
+.twentyseventeen-front-page.has-header-video .site-branding,
+.home.blog.has-header-image .site-branding,
+.home.blog.has-header-video .site-branding {
+  margin-bottom: 70px;
+  text-align:center;
+}
+
+.wrap {
+  max-width: 100%;
+
+  text-align: center;
+}
+
+.has-header-image .custom-header-media img,
+.has-header-video .custom-header-media video,
+.has-header-video .custom-header-media iframe {
+  display: none;
+	position: fixed;
+	height: auto;
+	left: 50%;
+	max-width: 1000%;
+	min-height: 100%;
+	min-width: 100%;
+	min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+	width: auto;
+	top: 50%;
+	padding-bottom: 1px; /* Prevent header from extending beyond the footer */
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.has-header-image.twentyseventeen-front-page .site-branding,
+.has-header-video.twentyseventeen-front-page .site-branding,
+.has-header-image.home.blog .site-branding,
+.has-header-video.home.blog .site-branding {
+  text-align:center;
+	display: table-cell;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+.has-header-image.twentyseventeen-front-page .site-branding,
+.has-header-video.twentyseventeen-front-page .site-branding,
+.has-header-image.home.blog .site-branding,
+.has-header-video.home.blog .site-branding {
+  text-align:center;
+  bottom: 0;
+  display: block;
+  left: 0;
+  height: auto;
+  padding-top: 0;
+  position: absolute;
+  width: 100%;
+  top:30%;
+}
+
+.site-branding {
+	text-align: center;
+	padding: 1em 0;
+	position: relative;
+	-webkit-transition: margin-bottom 0.2s;
+	transition: margin-bottom 0.2s;
+	z-index: 3;
+}
+
+.custom-header-media:before {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+75 */
+	-moz-background: none; /* FF3.6-15 */
+	background: none; /* Chrome10-25,Safari5.1-6 */
+	-webkit-background: none; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: inherit; /* IE6-9 */
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+
+.site-header {
+	background-color: #242424;
+	position: relative;
+}
+
+body.has-header-image .site-title,
+body.has-header-video .site-title,
+body.has-header-image .site-title a,
+body.has-header-video .site-title a {
+  font-family:"Montserrat", sans-serif;
+	color: #fff;
+  font-size: 145px;
+  font-weight: 800;
+  letter-spacing:5px;
+}
+
+.site-branding a {
+	text-decoration: none;
+
+}
+
+.site-branding a:hover,
+.site-branding a:focus {
+
+}
+
+.site-description {
+	color: #fff;
+	font-size: 25px;
+	margin-bottom: 0;
+  font-weight: 100;
 }

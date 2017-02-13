@@ -52,10 +52,11 @@ Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
 
 html {
-	font-family: sans-serif;
-	line-height: 1.15;
+	font-family: "Open Sans", sans-serif;
+	/*line-height: 1.15;*/
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	font-weight: 600;
 }
 
 body {
@@ -183,7 +184,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -417,11 +418,11 @@ input,
 select,
 textarea {
 	color: #333;
-	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
-	line-height: 1.66;
+	/*line-height: 1.66;*/
 }
 
 h1,
@@ -524,10 +525,10 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	line-height: 1.6;
+	/*line-height: 1.6;*/
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
@@ -538,7 +539,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1517,6 +1518,7 @@ body {
 }
 
 .wrap {
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 700px;
@@ -1534,9 +1536,7 @@ body {
 13.1 Header
 --------------------------------------------------------------*/
 
-#masthead .wrap {
-	position: relative;
-}
+
 
 .site-header {
 	background-color: #fafafa;
@@ -1545,15 +1545,9 @@ body {
 
 /* Site branding */
 
-.site-branding {
-	padding: 1em 0;
-	position: relative;
-	-webkit-transition: margin-bottom 0.2s;
-	transition: margin-bottom 0.2s;
-	z-index: 3;
-}
 
-.site-branding a {
+
+/*.site-branding a {
 	text-decoration: none;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
@@ -1562,7 +1556,7 @@ body {
 .site-branding a:hover,
 .site-branding a:focus {
 	opacity: 0.7;
-}
+}*/
 
 .site-title {
 	clear: none;
@@ -1582,19 +1576,19 @@ body {
 	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
 }
 
-body.has-header-image .site-title,
+/*body.has-header-image .site-title,
 body.has-header-video .site-title,
 body.has-header-image .site-title a,
 body.has-header-video .site-title a {
 	color: #fff;
-}
+}*/
 
-.site-description {
+/*.site-description {
 	color: #666;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	margin-bottom: 0;
-}
+}*/
 
 body.has-header-image .site-description,
 body.has-header-video .site-description {
@@ -1675,7 +1669,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	z-index: 2;
 }
 
-.has-header-image .custom-header-media img,
+/*.has-header-image .custom-header-media img,
 .has-header-video .custom-header-media video,
 .has-header-video .custom-header-media iframe {
 	position: fixed;
@@ -1684,15 +1678,15 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	max-width: 1000%;
 	min-height: 100%;
 	min-width: 100%;
-	min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+	min-width: 100vw; /* vw prevents 1px gap on left that 100% has
 	width: auto;
 	top: 50%;
-	padding-bottom: 1px; /* Prevent header from extending beyond the footer */
+	padding-bottom: 1px; /* Prevent header from extending beyond the footer
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-}
+}*/
 
 .wp-custom-header .wp-custom-header-video-button { /* Specificity prevents .color-dark button overrides */
 	background-color: rgba(34, 34, 34, 0.5);
@@ -1755,14 +1749,14 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	display: none;
 }
 
-.has-header-image.twentyseventeen-front-page .site-branding,
+/*.has-header-image.twentyseventeen-front-page .site-branding,
 .has-header-video.twentyseventeen-front-page .site-branding,
 .has-header-image.home.blog .site-branding,
 .has-header-video.home.blog .site-branding {
 	display: table-cell;
 	height: 100%;
 	vertical-align: bottom;
-}
+}*/
 
 /*--------------------------------------------------------------
 13.2 Front Page
@@ -3280,11 +3274,7 @@ object {
 
 	/* Layout */
 
-	.wrap {
-		max-width: 1000px;
-		padding-left: 3em;
-		padding-right: 3em;
-	}
+
 
 	.has-sidebar:not(.error404) #primary {
 		float: left;
@@ -3307,7 +3297,7 @@ object {
 		margin-bottom: 0;
 	}
 
-	.has-header-image.twentyseventeen-front-page .site-branding,
+	/*.has-header-image.twentyseventeen-front-page .site-branding,
 	.has-header-video.twentyseventeen-front-page .site-branding,
 	.has-header-image.home.blog .site-branding,
 	.has-header-video.home.blog .site-branding {
@@ -3318,11 +3308,9 @@ object {
 		padding-top: 0;
 		position: absolute;
 		width: 100%;
-	}
+	}*/
 
-	.has-header-image.twentyseventeen-front-page .custom-header {
-		display: block;
-	}
+
 
 	.has-header-video.twentyseventeen-front-page .custom-header,
 	.has-header-image.home.blog .custom-header,
@@ -3626,12 +3614,7 @@ object {
 
 	/* Front Page */
 
-	.twentyseventeen-front-page.has-header-image .site-branding,
-	.twentyseventeen-front-page.has-header-video .site-branding,
-	.home.blog.has-header-image .site-branding,
-	.home.blog.has-header-video .site-branding {
-		margin-bottom: 70px;
-	}
+
 
 	.twentyseventeen-front-page.has-header-image .custom-header-media,
 	.twentyseventeen-front-page.has-header-video .custom-header-media,
