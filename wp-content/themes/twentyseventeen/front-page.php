@@ -26,6 +26,52 @@ get_header(); ?>
 			get_template_part( 'template-parts/post/content', 'none' );
 		endif; ?>
 
+		<div class="red-border"></div>
+
+		<div id="mid" class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<p>Home Header</p>
+					<p>
+						<select class="selectpicker">
+						  <option>Map</option>
+						  <option>Featured Posts</option>
+						</select>
+					</p>
+				</div>
+				<div class="col-md-3">
+					<p>Sidebar</p>
+					<p>
+						<select class="selectpicker">
+						  <option>Yes</option>
+						  <option>No</option>
+						</select>
+					</p>
+			 </div>
+				<div class="col-md-3">
+					<p>Blog Listing</p>
+					<p>
+						<select class="selectpicker">
+						  <option>Standard</option>
+						  <option>Title Over Image</option>
+						  <option>Title Over Image In Block</option>
+						</select>
+					</p>
+				</div>
+				<div class="col-md-3">
+					<p>Header Style</p>
+					<p>
+						<select class="selectpicker">
+						  <option>Standard</option>
+						  <option>Top Menu</option>
+						  <option>Bottom Menu</option>
+							<option>Bottom Menu Centered</option>
+						</select>
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<?php
 		// Get each of our panels and show the post data.
 		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
@@ -47,6 +93,7 @@ get_header(); ?>
 			}
 
 	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
+
 
 	</main><!-- #main -->
 </div><!-- #primary -->

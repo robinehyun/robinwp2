@@ -25,6 +25,9 @@
 				if ( $description || is_customize_preview() ) : ?>
 					<p class="site-description"><?php echo $description; ?></p>
 				<?php endif; ?>
+				<div class="btn-wrap">
+					<a id="purchaseBtn" class="btn btn-primary btn-short" href="#">PURCHASE</a>
+				</div>
 		</div><!-- .site-branding-text -->
 
 		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>

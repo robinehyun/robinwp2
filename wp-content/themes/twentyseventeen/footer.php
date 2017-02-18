@@ -42,6 +42,6 @@
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-
+<script type="text/javascript" src="http://localhost/~robinyun/robinwp2/wp-content/themes/twentyseventeen/assets/js/app.js"></script>
 </body>
 </html>
