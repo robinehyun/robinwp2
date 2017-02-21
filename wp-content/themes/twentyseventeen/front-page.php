@@ -25,7 +25,7 @@ get_header(); ?>
 		else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
 			get_template_part( 'template-parts/post/content', 'none' );
 		endif; ?>
-
+		<hr />
 		<div class="red-border"></div>
 
 		<div id="mid" class="container">
@@ -70,7 +70,10 @@ get_header(); ?>
 					</p>
 				</div>
 			</div>
+
+			<button type="button" id="yello" class="btn btn-default btn-lg btn-block">BUILD DEMO</button>
 		</div>
+
 
 		<?php
 		// Get each of our panels and show the post data.

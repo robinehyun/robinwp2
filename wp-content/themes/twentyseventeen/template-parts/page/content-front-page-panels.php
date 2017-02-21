@@ -46,6 +46,10 @@ global $twentyseventeencounter;
 				?>
 			</div><!-- .entry-content -->
 
+			<hr class="posthr"/>
+			<div class="red-border"></div>
+
+
 			<?php
 			// Show recent blog posts if is blog posts page (Note that get_option returns a string, so we're casting the result as an int).
 			if ( get_the_ID() === (int) get_option( 'page_for_posts' )  ) : ?>

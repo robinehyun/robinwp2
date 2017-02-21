@@ -196,14 +196,15 @@ a#puchaseBtn {
 }
 
 .red-border {
-  margin: -2px auto 0px auto;
+  margin: -22px auto 0px auto;
   width: 150px;
   line-height: 45px;
   border-bottom: 3px solid #f8c12c;
 }
 
 #mid {
-  margin-top: 40px;
+  margin-top: 60px;
+  height: 200px;
 }
 
 .selectpicker {
@@ -213,4 +214,31 @@ a#puchaseBtn {
   line-height: 40px;
   width: 100%;
   padding: 0px 10px;
+}
+
+#yello {
+  border-radius: 2px;
+  background: #f8c12c;
+  line-height: 40px;
+  font-weight: bold;
+  border-color: #f8c12c;
+  padding: 0;
+  font-size: 1em;
+}
+
+.panel-content {
+  border-bottom: 0;
+}
+
+hr {
+  width: 78%;
+}
+
+.page-one-column .panel-content .wrap {
+  width: 100%;
+  max-width: 100%;
+}
+
+.twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
+  border-top: 0;
 }
